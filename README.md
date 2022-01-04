@@ -25,3 +25,8 @@ Once all the formatting and data input is finalised, run `npm run build`. This w
 - [moralis](https://moralis.io/)
 
 ## Next.js + Tailwind CSS
+
+```sh
+> npx create-react-app --example with-tailwindcss metaverse-test
+
+```
