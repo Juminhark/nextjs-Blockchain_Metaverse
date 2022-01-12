@@ -1,32 +1,23 @@
-# PAPA React JS Resume Starter Pack and Digital Portfolio
+## Metaverse test
 
-## [start pack](https://github.com/sonnysangha/Resume-Portfolio-Starter-pack)
+- [Sonny Sangha - Metaverse reactjs Challenge](https://www.youtube.com/watch?v=3NpZ05sDTQ4)
 
-## Install Dependancies
-
-Next, you need to install all the dependancies using:
-
-`npm install`
-
-Once this is done, you can start the app with:
-
-`npm start`
-
-## Finalising Resume
-
-Once all the formatting and data input is finalised, run `npm run build`. This will create a dedicated build folder.
-
-## Host Resume Online
-
-- [netlify](https://app.netlify.com/)
-
-## Setting up Moralis
-
-- [moralis](https://moralis.io/)
-
-## Next.js + Tailwind CSS
+## init
 
 ```sh
-> npx create-react-app --example with-tailwindcss metaverse-test
-
+> npx create-next-app --example with-tailwindcss
 ```
+
+## Image
+
+```js
+import Image from 'next/image';
+
+const Component = () => {
+	return <Image src="https://links.papareact.com/55n" />;
+};
+
+export default Component;
+```
+
+- next.config.js : host prop connect
