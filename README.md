@@ -21,3 +21,11 @@ export default Component;
 ```
 
 - next.config.js : host prop connect
+
+# Implementing Moralis
+
+## [react-moralis](https://docs.moralis.io/moralis-server/tools/react-moralis)
+
+```sh
+> npm install react-moralis
+```
