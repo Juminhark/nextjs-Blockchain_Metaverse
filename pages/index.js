@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import Login from '../components/Login';
+import { useMoralis } from 'react-moralis';
 
 export default function Home() {
-	const isAuthenticated = false;
+	const { isAuthenticated } = useMoralis();
 
-	// user가 없으면 Login
 	if (!isAuthenticated) return <Login />;
 
 	return (

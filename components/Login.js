@@ -1,6 +1,10 @@
 import Image from 'next/image';
+import { useMoralis } from 'react-moralis';
 
 const Login = () => {
+
+	const { authenticate } = useMoralis();
+
 	return (
 		<div className="bg-black relative ">
 			<h1>Welcome to METAVERSE WORLD</h1>
@@ -15,7 +19,7 @@ const Login = () => {
 				/>
 
 				{/* Login button */}
-				<button className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse">
+				<button onClick={} className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse">
 					Login to the METAVERSE
 				</button>
 			</div>
