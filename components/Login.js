@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import { useMoralis } from 'react-moralis';
 
-const Login = () => {
+function Login() {
 	const { authenticate } = useMoralis();
 
 	return (
-		<div className="bg-black relative ">
+		<div className="bg-black relative">
 			<h1>Welcome to METAVERSE WORLD</h1>
 
 			<div className="flex flex-col absolute z-50 h-4/6 w-full items-center justify-center space-y-4">
@@ -19,14 +19,14 @@ const Login = () => {
 
 				{/* Login button */}
 				<button
-					onClick={authenticate}
+					onClick={() => authenticate()}
 					className="bg-yellow-500 rounded-lg p-5 font-bold animate-pulse"
 				>
 					Login to the METAVERSE
 				</button>
 			</div>
 
-			<div className="w-full h-screen">
+			<div className="w-full h-screen relative">
 				<Image
 					src="https://links.papareact.com/55n"
 					layout="fill"
@@ -35,6 +35,6 @@ const Login = () => {
 			</div>
 		</div>
 	);
-};
+}
 
 export default Login;
